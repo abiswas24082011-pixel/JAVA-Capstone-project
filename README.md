@@ -78,8 +78,6 @@ If you use an IDE, mark `src` as the source root and run `banking.ConsoleApp`.
 
 Both files are updated after each successful operation.
 
-## Viva-ready explanation
-
 ### Problem statement
 
 Manual banking operations are slow and error-prone. This project automates core banking actions in a small
