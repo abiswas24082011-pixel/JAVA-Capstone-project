@@ -19,16 +19,6 @@ remain available after the program is closed and reopened.
 - List all accounts
 - File-based persistence using plain CSV files
 
-## Why file storage is used
-
-The assignment brief explicitly allows a console-based solution and mentions no database integration as a limitation.
-Using CSV files is the right scope here because:
-
-- it keeps the project simple and easy to demo in a viva
-- it preserves data across runs
-- it supports transaction history properly
-- it matches the stated future enhancement idea of moving to JDBC/MySQL later
-
 ## Project structure
 
 ```text
@@ -58,7 +48,7 @@ javac -d out (Get-ChildItem -Recurse -Filter *.java | ForEach-Object FullName)
 java -cp out banking.ConsoleApp
 ```
 
-If you use an IDE, mark `src` as the source root and run `banking.ConsoleApp`.
+For IDE, `src` as the source root and run `banking.ConsoleApp`.
 
 ## Menu flow
 
@@ -78,10 +68,6 @@ If you use an IDE, mark `src` as the source root and run `banking.ConsoleApp`.
 
 Both files are updated after each successful operation.
 
-### Problem statement
-
-Manual banking operations are slow and error-prone. This project automates core banking actions in a small
-console-based system.
 
 ### Objective
 
@@ -97,12 +83,6 @@ To demonstrate Core Java, OOP, exception handling, collections, file handling, a
 - `BigDecimal` for money-safe calculations
 - `LocalDateTime` for timestamps
 
-### Limitations
-
-- Console-based only
-- No database integration
-- No login/authentication layer
-- No network or online banking support
 
 ### Future enhancements
 
